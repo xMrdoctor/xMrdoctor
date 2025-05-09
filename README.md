@@ -9,6 +9,7 @@ I love **virtual spaces**, crafting **secure backends**, and creating intelligen
 - **Python** (85%) – OOP, Tkinter GUI, SQLite3, `telebot`, `requests`, and more
 - **SQL** (90%) – Database Design, Optimization
 - **HTML** (85%) + **CSS** (60%) – Web UI/UX (and I like Tailwind)
+- **PHP** (40%) – Website back end 
 - **Git & GitHub** – Version Control Master (100%)
 
 ## 🛠️ Other Tools I Use:
