@@ -29,9 +29,9 @@ I love **virtual spaces**, crafting **secure backends**, and creating intelligen
 
 ## 📈 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=xMrDoctor&show_icons=true&theme=radical" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=xMrDoctor&theme=radical" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xMrDoctor&layout=compact&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api?username=xMrDoctor&show_icons=true&theme=radical"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=xMrDoctor&theme=radical"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xMrDoctor&layout=compact&theme=radical"/>
 </p>
 
 ---
