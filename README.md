@@ -16,7 +16,7 @@ I love **virtual spaces**, crafting **secure backends**, and creating intelligen
 - **C#** (55%) – Mostly with Avalonia UI
 - **Dart** (30%) – Playing around with Flutter
 - **Prompt Writing** (80%) – I write with intent, precision, and persuasion
-- **Linux, Terminal, Bash** – My natural habitat
+- **Linux, Terminal, Bash** – My natural habitat (Arch User)
 
 ---
 
