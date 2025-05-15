@@ -13,10 +13,10 @@ I love **virtual spaces**, crafting **secure backends**, and creating intelligen
 - **Git & GitHub** – Version Control Master (100%)
 
 ## 🛠️ Other Tools I Use:
-- **C#** (55%) – Mostly with Avalonia UI
-- **Dart** (30%) – Playing around with Flutter
-- **Prompt Writing** (80%) – I write with intent, precision, and persuasion
-- **Linux, Terminal, Bash** – My natural habitat (Arch User)
+- **C#** (80%) – Mostly with Avalonia UI
+- **Dart** (40%) – Playing around with Flutter
+- **Prompt Writing** (90%) – I write with intent, precision, and persuasion
+- **Linux, Terminal, Bash** – My natural habitat (i am Arch User)
 
 ---
 
