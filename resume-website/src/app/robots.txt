@@ -1,0 +1,10 @@
+# Allow all user agents to crawl all pages by default
+User-agent: *
+Allow: /
+
+# Disallow specific paths if needed, for example:
+# Disallow: /admin/
+# Disallow: /private/
+
+# Specify the location of the sitemap (will be created next)
+Sitemap: https://yourdomain.com/sitemap.xml # Replace with your actual domain

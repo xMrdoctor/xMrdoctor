@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/fonts/Vazirmatn-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  @apply font-vazir bg-light-background text-light-foreground dark:bg-dark-background dark:text-dark-foreground;
+  direction: rtl; /* Default to RTL for Persian */
+}
+
+/* Add styles for LTR sections if needed */
+[dir="ltr"] {
+  direction: ltr;
+}
+
+/* Basic responsive typography */
+h1 {
+  @apply text-4xl font-bold md:text-5xl;
+}
+
+h2 {
+  @apply text-3xl font-semibold md:text-4xl;
+}
+
+h3 {
+  @apply text-2xl font-medium md:text-3xl;
+}
+
+/* Add more global styles as needed */
