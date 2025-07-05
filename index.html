@@ -1,0 +1,307 @@
+<?php
+if (!session_id()) {
+    session_start();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Doctor - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Consider adding a favicon later -->
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav id="navbar">
+                <a href="#hero" class="nav-logo">Mr Doctor</a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="section hero-section">
+            <div class="container hero-content">
+                <h1>Hi, I'm <span class="highlight">Mr Doctor</span></h1>
+                <p class="subtitle">A 20-year-old Iranian developer passionate about programming, cybersecurity, Linux, and building minimal, efficient software.</p>
+                <a href="#projects" class="btn hero-btn">View My Work</a>
+                <a href="#contact" class="btn btn-secondary hero-btn">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <!-- Python -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-python"></i> Python (85%)</h3>
+                            <p>OOP, Tkinter, SQLite3, Telebot, Requests</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <!-- SQL -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-sql"></i> SQL (90%)</h3>
+                            <p>Design and Optimization</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <!-- HTML/CSS -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-htmlcss"></i> HTML (85%) + CSS (60%)</h3>
+                            <p>UI/UX, some Tailwind</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 72.5%;"></div> <!-- Average for display -->
+                        </div>
+                    </div>
+                    <!-- PHP -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-php"></i> PHP (40%)</h3>
+                            <p>Simple Backend</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <!-- Git/GitHub -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-git"></i> Git/GitHub (100%)</h3>
+                            <p>Version Control</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <!-- C# -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-csharp"></i> C# (80%)</h3>
+                            <p>With Avalonia UI</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <!-- Dart -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-dart"></i> Dart (40%)</h3>
+                            <p>Beginner Level</p>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <!-- Bash/Linux -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <h3><i class="icon-linux"></i> Bash/Linux</h3>
+                            <p>Arch Linux User</p>
+                        </div>
+                        <!-- No progress bar for general proficiency like Bash/Linux unless specified -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div id="projects-grid" class="projects-grid">
+                    <!-- Projects will be dynamically loaded here by script.js -->
+                    <p class="loading-projects">Loading projects from GitHub...</p>
+                    <!-- Placeholder structure for a project card (for styling) -->
+                    <!--
+                    <div class="project-card">
+                        <h3>Project Title</h3>
+                        <p>Project description goes here. Brief and to the point.</p>
+                        <div class="project-tags">
+                            <span class="tag">Language1</span>
+                            <span class="tag">Language2</span>
+                        </div>
+                        <a href="#" target="_blank" class="btn project-link">View Project</a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <div class="container">
+                <h2>Blog/Notes</h2>
+                <div id="blog-posts-container" class="blog-posts-container">
+                    <?php
+                        // Fetch and display recent blog posts (e.g., 3 most recent)
+                        // This assumes blog.php and its functions are accessible or duplicated here
+                        // For simplicity, let's define a similar function here or include a helper.
+
+                        // Simplified post fetching for index page
+                        define('POSTS_DIR_INDEX', __DIR__ . '/posts/'); // Relative to index.html
+
+                        function get_recent_posts_for_index($limit = 3) {
+                            $files = glob(POSTS_DIR_INDEX . '*.md');
+                            // Sort files by name (could be by date if filenames include date)
+                            // For now, simple reverse sort to get "latest" if names are sequential or date-prefixed
+                            if ($files) {
+                                rsort($files); // Sorts in reverse, newest first if named appropriately
+                            } else {
+                                $files = [];
+                            }
+
+                            $posts = [];
+                            $count = 0;
+                            foreach ($files as $file) {
+                                if ($count >= $limit) break;
+                                $filename = basename($file);
+                                $title = htmlspecialchars(str_replace(['-', '_'], ' ', pathinfo($filename, PATHINFO_FILENAME)));
+
+                                $content_md = file_get_contents($file);
+                                $excerpt_md = substr($content_md, 0, 300); // Get first 300 chars for a better chance at meaningful content
+
+                                // Improved plain text excerpt generation:
+                                $excerpt_text = $excerpt_md;
+                                // 1. Remove code blocks (simplistic)
+                                $excerpt_text = preg_replace('/```.*?```/s', '', $excerpt_text);
+                                // 2. Remove images ![alt](src)
+                                $excerpt_text = preg_replace('/!\[([^\]]*)\]\(([^)]+)\)/', '$1', $excerpt_text); // Keep alt text
+                                // 3. Convert Headings to plain text (remove #)
+                                $excerpt_text = preg_replace('/^#+\s*/m', '', $excerpt_text);
+                                // 4. Links: keep only the text part [text](url) -> text
+                                $excerpt_text = preg_replace('/\[([^\]]+)\]\([^)]+\)/', '$1', $excerpt_text);
+                                // 5. Remove other common markdown symbols like *, _, `, > (blockquotes)
+                                $excerpt_text = str_replace(['**', '__', '*', '_', '`', '>'], '', $excerpt_text);
+                                // 6. Remove horizontal rules
+                                $excerpt_text = preg_replace('/^\s*([-*_]){3,}\s*$/m', '', $excerpt_text);
+                                // 7. Consolidate whitespace and trim
+                                $excerpt_text = trim(preg_replace('/\s+/', ' ', $excerpt_text));
+
+                                if (strlen($excerpt_text) > 150) { // Trim to a final length
+                                    $excerpt_text = substr($excerpt_text, 0, 150);
+                                    $excerpt_text = rtrim($excerpt_text, " \t\n\r\0\x0B.,!?-") . "..."; // Clean trim and add ellipsis
+                                } elseif (strlen($content_md) > 300) {
+                                     $excerpt_text .= "...";
+                                }
+
+
+                                $posts[] = [
+                                    'url' => 'php/blog.php?post=' . urlencode($filename),
+                                    'title' => $title,
+                                    'excerpt' => $excerpt_text
+                                    // 'date' => // Could parse from filename or front-matter later
+                                ];
+                                $count++;
+                            }
+                            return $posts;
+                        }
+
+                        $recent_posts = get_recent_posts_for_index(3);
+
+                        if (!empty($recent_posts)) {
+                            foreach ($recent_posts as $post) {
+                                echo '<article class="blog-post-item">';
+                                echo '<h3><a href="' . htmlspecialchars($post['url']) . '">' . $post['title'] . '</a></h3>';
+                                // echo '<p class="post-meta">Published on <time datetime="YYYY-MM-DD">Month DD, YYYY</time></p>'; // Placeholder for date
+                                echo '<p class="post-excerpt">' . (!empty($post['excerpt']) ? htmlspecialchars($post['excerpt']) : 'Read more to see the content.') . '</p>';
+                                echo '<a href="' . htmlspecialchars($post['url']) . '" class="btn btn-secondary">Read More</a>';
+                                echo '</article>';
+                            }
+                        } else {
+                            echo '<p class="loading-posts">No recent blog posts to display. Check out the full blog!</p>';
+                        }
+                    ?>
+                     <!-- Placeholder structure for a blog post item (for styling) -->
+                    <!--
+                    <article class="blog-post-item">
+                        <h3><a href="blog-post-url.html">Blog Post Title</a></h3>
+                        <p class="post-meta">Published on <time datetime="YYYY-MM-DD">Month DD, YYYY</time></p>
+                        <p class="post-excerpt">A short excerpt of the blog post content goes here, encouraging users to read more...</p>
+                        <a href="blog-post-url.html" class="btn btn-secondary">Read More</a>
+                    </article>
+                    -->
+                </div>
+                <div class="view-all-posts-link">
+                    <a href="php/blog.php" class="btn">View All Posts</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-form-container">
+                    <form id="contact-form" action="php/contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required value="<?php echo isset($_SESSION['form_data']['name']) ? htmlspecialchars($_SESSION['form_data']['name']) : ''; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required value="<?php echo isset($_SESSION['form_data']['email']) ? htmlspecialchars($_SESSION['form_data']['email']) : ''; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required><?php echo isset($_SESSION['form_data']['message']) ? htmlspecialchars($_SESSION['form_data']['message']) : ''; ?></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div id="form-status-message" class="<?php if(isset($_SESSION['form_status_class'])) { echo $_SESSION['form_status_class']; } ?>">
+                        <?php
+                            if (isset($_SESSION['form_status_message'])) {
+                                echo htmlspecialchars($_SESSION['form_status_message']);
+                                // Unset session variables after displaying them
+                                unset($_SESSION['form_status_message']);
+                                unset($_SESSION['form_status_class']);
+                                if(isset($_SESSION['form_data'])) {
+                                    unset($_SESSION['form_data']);
+                                }
+                            }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume-download" class="section">
+            <div class="container">
+                <h2>My Resume</h2>
+                <a href="assets/resume.pdf" download="MrDoctor_Resume.pdf" class="btn">Download Resume (PDF)</a>
+                <!-- We'll need to add a resume.pdf to the assets folder -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Mr Doctor. All rights reserved.</p>
+            <p>Proudly built without frameworks.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

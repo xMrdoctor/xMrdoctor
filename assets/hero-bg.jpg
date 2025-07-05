@@ -1,0 +1,5 @@
+This is a placeholder for the hero background image.
+To make the site look good, please replace this with an actual image.
+A dark, abstract, or tech-related background image would fit well with the theme.
+Ensure it's optimized for web use (e.g., compressed JPEG or WebP).
+For now, the CSS uses a linear gradient as a fallback if the image is not found or if you prefer a non-image background.

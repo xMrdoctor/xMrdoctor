@@ -1,0 +1,8 @@
+This is a placeholder PDF file for Mr. Doctor's resume.
+Please replace this file with the actual resume in PDF format.
+
+The filename `resume.pdf` is referenced in `index.html` for the download button:
+`<a href="assets/resume.pdf" download="MrDoctor_Resume.pdf" class="btn">Download Resume (PDF)</a>`
+
+Ensure the actual PDF is named `resume.pdf` and placed in the `assets/` directory,
+or update the `href` in `index.html` if a different name is used.
